@@ -7,6 +7,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
 
@@ -73,4 +74,19 @@ public class Main {
             System.out.println("Мест нет");
         }
     }
+    public static void task7() {
+        int one = 1000;
+        int two = 1000;
+        int three = 1000;
+        boolean largestNumber = three > one && three > two;
+        if (largestNumber) {
+            System.out.println("Самое большое число " + three);
+        } else if (one > two && one > three) {
+            System.out.println("Самое большое число " + one);
+        } else if (two > one && two > three) {
+            System.out.println("Самое большое число " + two);
+        } else if (one == two && one == three && two == three) {
+            System.out.println("Все три числа равны");
+        }
     }
+}
