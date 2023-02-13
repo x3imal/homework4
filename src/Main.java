@@ -4,6 +4,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
 
@@ -30,6 +31,21 @@ public class Main {
             System.out.println("Если скорость " + speed + " км/ч, придется заплатить штраф.");
         } else {
             System.out.println("Если скорость " + speed + " км/ч, можно ездить спокойно.");
+        }
+    }
+    public static void task4() {
+        int age = 25;
+        boolean canToGoKindergarten = age >= 2 && age <= 6;
+        if (canToGoKindergarten) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");}
+        boolean canToGoToSchool = age >= 7 && age <= 18;
+        if (canToGoToSchool) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");}
+        boolean canToGoToUniversity = age > 18 && age < 24;
+        if (canToGoToUniversity) {
+            System.out.println("Если возраст человка равен " + age + ", то ему нужно ходить в университет");}
+        if (age > 24) {
+            System.out.println("Если возраст человека равен " + age + ", то ему пора ходить на работу");
         }
     }
     }
